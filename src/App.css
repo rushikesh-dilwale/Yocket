@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+}
+
+.cop-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.city-selection, .vehicle-selection, .result-page {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color:  rgba(255, 0, 0, 0.8);
   color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background-color:  rgba(255, 0, 0, 0.8);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+  .cop-section {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    font-size: 14px;
   }
+}
+
+
+.cop-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.city,
+.vehicle {
+  text-align: center;
+  margin-right: 10px;
+}
+
+
+.next-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.next-button {
+  background-color:  rgba(255, 0, 0, 0.8); /* Green color */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set to 100% of the viewport height */
+}
+
+.result-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.restart-button {
+  background-color:  rgba(255, 0, 0, 0.8); /* Green color */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/121/73/262/valorant-jett-valorant-phoenix-valorant-sova-valorant-sage-valorant-hd-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/121/73/262/valorant-jett-valorant-phoenix-valorant-sova-valorant-sage-valorant-hd-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+  color: white; /* Set text color to white */
+}
+
+.game-container {
+  background-color: rgba(255, 0, 0, 0.8); /* Set button color to mat red */
+  padding: 20px;
+  border-radius: 10px;
 }
